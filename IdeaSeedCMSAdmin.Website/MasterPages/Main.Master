@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="IdeaSeedCMSAdmin.Website.MasterPages.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link rel="shortcut icon" type="image/gif" href="/images/favicon.gif"/>
+    <link rel="stylesheet" href="/Styles/prettyPhoto.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/Styles/nivo-slider.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" id="skinsswitcher" href="/Styles/style.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/custom.js"></script>
+    <script type="text/javascript" src="/Scripts/slides/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/cycle-slider/cycle.js"></script>
+    <script type="text/javascript" src="/Scripts/nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="/Scripts/tabify/jquery.tabify.js"></script>
+    <script type="text/javascript" src="/Scripts/prettyPhoto/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="/Scripts/twitter/jquery.tweet.js"></script>
+    <script type="text/javascript" src="/Scripts/scrolltop/scrolltopcontrol.js"></script>
+    <script type="text/javascript" src="/Scripts/portfolio/filterable.js"></script>
+    <script type="text/javascript" src="/Scripts/modernizr/modernizr-2.0.3.js"></script>
+    <script type="text/javascript" src="/Scripts/easing/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/Scripts/kwicks/jquery.kwicks-1.5.1.pack.js"></script>
+    <script type="text/javascript" src="/Scripts/swfobject/swfobject.js"></script>
+    <!--CUFON FONTS-->
+    <script type="text/javascript" src="/Scripts/cufon-fonts/cufon.js"></script>
+    <script type="text/javascript" src="/Scripts/cufon-fonts/cufon-settings.js"></script>
+    <script type="text/javascript" src="/Scripts/cufon-fonts/cufon.museo.js"></script>
+    <script type="text/javascript" src="/Scripts/cufon-fonts/Titillium.font.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:radscriptmanager 
+    ID="RadScriptManager1" 
+    runat="server">
+        <Scripts>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+        </Scripts>
+    </telerik:radscriptmanager>
+    <telerik:radajaxmanager 
+    ID="RadAjaxManager1" 
+    runat="server">
+    <AjaxSettings>
+            <telerik:AjaxSetting AjaxControlID="lbNewsletter">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" LoadingPanelID="RadAjaxLoadingPanel1" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+        </AjaxSettings>
+    </telerik:radajaxmanager>
+    <div id="wrapper">
+	    <div class="center">
+		    <p class="header-text-left">
+		    
+		    </p>
+	    <%--<ul id="header-icons">
+		    <li class="icon-facebook" title="Facebook"><a href="http://www.facebook.com/ModestoPower" ></a></li>
+		    <li class="icon-twitter" title="Twitter"><a href="http://www.facebook.com/ModestoPower" target="_blank"></a></li>
+		    <li class="icon-vimeo" title="Vimeo"><a href="http://www.facebook.com/ModestoPower" target="_blank"></a></li>
+	    </ul>--%>
+		    <div id="container">
+			    <!--WRAPPER-->
+			    <div runat="server" id="header">
+				    <!-- HEADER  -->
+				    <!-- LOGO -->
+				    <a id="logo" title="Homepage" href="/Pages"></a>
+				    <!--LOGO ENDS  -->
+                    
+            
+				    
+					    <!--  MAIN  NAVIGATION-->
+                        <div id="main_navigation" class="main-menu ">
+					<!--  MAIN  NAVIGATION-->
+					<ul>
+						<li><a href="#">Content</a>
+						    <ul>
+							    <li><a href="/Pages.aspx">Pages</a></li>
+							    <li><a href="/Banners.aspx">Banners</a></li>
+                                <li><a href="/News">News</a></li>
+                                <li><a href="/Document-Library">Document Library</a></li>
+						    </ul>
+						</li>
+						<li><a href="#">Campaign Manager</a>
+						    <ul>
+                                <li><a href="/Campaign-Manager/Campaign-Manager-Settings">Settings</a></li>
+							    <li><a href="/Campaign-Manager/Dashboard">Dashboard</a></li>
+							    <li><a href="/Campaign-Manager/Templates">Templates</a></li>
+							    <li><a href="/Campaign-Manager/Subscribers">Subscribers</a></li>
+                                <li><a href="/Campaign-Manager/Tags">Tags</a></li>
+                                <li><a href="/Campaign-Manager/Coupons">Coupons</a></li>
+                                <li><a href="/Campaign-Manager/Manage-Coupon-Codes">Manage Coupon Codes</a></li>
+						    </ul>
+						</li>
+						<li><a href="#">Security</a>
+						    <ul>
+							    <li><a href="/Users.aspx">Users</a></li>
+                            </ul>
+						</li>
+						<li>
+                            <asp:LinkButton
+                            runat="server"
+                            ID="lbLogout"
+                            CausesValidation="false"
+                            OnClick="LogoutClicked">
+                                Logout
+                            </asp:LinkButton>
+                        </li>
+					</ul>
+                    <div style="float: right; margin-top: 3px;">
+                        <asp:HyperLink
+                        runat="server"
+                        Target="_blank"
+                        Text="Selected Site: "
+                        ID="lbSelectedSite"/>
+                        <idea:ApplicationDDL
+                        runat="server"
+                        AutoPostBack="true"
+                        OnSelectedIndexChanged="ApplicationChanged"
+                        id="ddlMainApplication" />
+                    </div>
+				</div>
+				    <!-- MAIN NAVIGATION ENDS-->
+			    </div>
+			    <!-- HEADER ENDS-->
+			    <!-- MAIN CONTAINER -->
+			    <div id="content">
+						<asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                        	    
+				    
+				   
+				    <!-- FOOTER WRAPPER ENDS-->
+				    <div id="copyright-wrapper">
+					    <!-- COPYRIGHTS WRAPPER STARTS-->
+					    <div id="copyright">
+						    <%--<a id="logo-copyright" title="Homepage" href="#"></a>--%>
+						    <%--<div class="right">
+							    <p>
+								    <a href="/Home">Home</a> / <a href="/Our-Trainers/Chewy">Our Trainers</a> / <a href="/What-We-Offer/Jiu-Jitsu">Programs</a> / <a href="/Contact">Contact</a> / <a href="/Schedule">Schedule</a> / <a href="/News">News</a>
+							    </p>
+							    <span>© Copyright <%= DateTime.Today.Year.ToString() %> <font color="#cc0000">Modesto</font><font color="#000">Power</font>. All rights reserved.</span>
+						    </div>--%>
+					    </div>
+					    <!-- COPYRIGHTS ENDS-->
+				    </div>
+				    <!-- COPYRIGHTS WRAPPER ENDS-->	
+		    </div>
+		    </div>
+	    </div>
+    </div>
+    </form>
+</body>
+</html>

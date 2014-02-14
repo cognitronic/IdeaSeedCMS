@@ -1,0 +1,13 @@
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\IdeaSeedCMS.Core.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\IdeaSeedCMS.Core.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\IdeaSeed.Core.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\NHibernate.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\Iesi.Collections.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\IdeaSeed.Core.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\NHibernate.xml
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\Iesi.Collections.xml
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\obj\Debug\IdeaSeedCMS.Core.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\obj\Debug\IdeaSeedCMS.Core.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\NHibernate.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Core\bin\Debug\Iesi.Collections.pdb

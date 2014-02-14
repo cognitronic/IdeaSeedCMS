@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using NHibernate;
+using NHibernate.Cfg;
+using NHibernate.Criterion;
+using IdeaSeed.Core.Data.NHibernate;
+using IdeaSeedCMS.Core.Domain;
+
+namespace IdeaSeedCMS.Persistence.Repositories
+{
+    public class BannerImageRepository : BaseRepository<BannerImage, int>
+    {
+    }
+}

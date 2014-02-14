@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="IdeaSeedCMS.Core"
+namespace="IdeaSeedCMS.Core.Domain">
+    <class name="Blog" table="Blog">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="Title" />
+        <property name="PostType" />
+        <property name="EnteredBy" />
+        <property name="StartDate" />
+        <property name="EndDate" />
+        <property name="BlogContent" length="2147483647"/>
+        <property name="SEOKeywords" />
+        <property name="SEODescription" />
+        <many-to-one name="BlogUser" class="IdeaSeedCMS.Core.Domain.User, IdeaSeedCMS.Core" column="EnteredBy" insert="false" update="false" cascade="none" />
+    </class>
+</hibernate-mapping>

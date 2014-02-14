@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="IdeaSeedCMS.Core"
+namespace="IdeaSeedCMS.Core.Domain">
+    <class name="ScheduleEvent" table="Event">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="Name" />
+        <property name="Description" />
+        <property name="IsActive" />
+        <property name="StaffID" />
+        <property name="EventTypeID" />
+        <many-to-one name="StaffRef" class="IdeaSeedCMS.Core.Domain.Staff, IdeaSeedCMS.Core" column="StaffID" insert="false" update="false" cascade="none" />
+        <many-to-one name="EventTypeRef" class="IdeaSeedCMS.Core.Domain.ScheduleEventType, IdeaSeedCMS.Core" column="EventTypeID" insert="false" update="false" cascade="none" />
+    </class>
+</hibernate-mapping>

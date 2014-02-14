@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCF1DE8E-40D3-45FA-8D5A-FCED03866D47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IdeaSeedCMS.Core</RootNamespace>
+    <AssemblyName>IdeaSeedCMS.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdeaSeed.Core">
+      <HintPath>..\References\IdeaSeed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\AccessLevel.cs" />
+    <Compile Include="Domain\AdminApplicationView.cs" />
+    <Compile Include="Domain\Application.cs" />
+    <Compile Include="Domain\ApplicationView.cs" />
+    <Compile Include="Domain\ApplicationViewLayout.cs" />
+    <Compile Include="Domain\BannerImage.cs" />
+    <Compile Include="Domain\Blog.cs" />
+    <Compile Include="Domain\BlogPostType.cs" />
+    <Compile Include="Domain\DocumentLibrary.cs" />
+    <Compile Include="Domain\Interfaces\IAdminApplicationView.cs" />
+    <Compile Include="Domain\Interfaces\IApplication.cs" />
+    <Compile Include="Domain\Interfaces\IDocumentLibrary.cs" />
+    <Compile Include="Domain\Interfaces\ISchedule.cs" />
+    <Compile Include="Domain\PageType.cs" />
+    <Compile Include="Domain\Schedule.cs" />
+    <Compile Include="Domain\ScheduleEvent.cs" />
+    <Compile Include="Domain\ScheduleEventType.cs" />
+    <Compile Include="Domain\Interfaces\IApplicationView.cs" />
+    <Compile Include="Domain\Interfaces\IBannerImage.cs" />
+    <Compile Include="Domain\Interfaces\IBlog.cs" />
+    <Compile Include="Domain\Interfaces\IScheduleEvent.cs" />
+    <Compile Include="Domain\Interfaces\IScheduleEventType.cs" />
+    <Compile Include="Domain\Interfaces\IItem.cs" />
+    <Compile Include="Domain\Interfaces\IPage.cs" />
+    <Compile Include="Domain\Interfaces\IPageApplicationView.cs" />
+    <Compile Include="Domain\Interfaces\IPageContent.cs" />
+    <Compile Include="Domain\Interfaces\IPageLink.cs" />
+    <Compile Include="Domain\Interfaces\IStaff.cs" />
+    <Compile Include="Domain\Interfaces\IUser.cs" />
+    <Compile Include="Domain\Item.cs" />
+    <Compile Include="Domain\ItemType.cs" />
+    <Compile Include="Domain\NavigationType.cs" />
+    <Compile Include="Domain\Page.cs" />
+    <Compile Include="Domain\PageApplicationView.cs" />
+    <Compile Include="Domain\PageContent.cs" />
+    <Compile Include="Domain\PageLink.cs" />
+    <Compile Include="Domain\Staff.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceStrings.cs" />
+    <Compile Include="Security\ApplicationContext.cs" />
+    <Compile Include="Security\AuthenticationResponse.cs" />
+    <Compile Include="Security\CMSSecurityContext.cs" />
+    <Compile Include="Security\MasterPageContext.cs" />
+    <Compile Include="Security\SecurityContextManager.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

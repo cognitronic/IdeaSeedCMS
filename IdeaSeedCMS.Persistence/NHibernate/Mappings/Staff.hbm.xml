@@ -1,0 +1,16 @@
+﻿<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="IdeaSeedCMS.Core"
+namespace="IdeaSeedCMS.Core.Domain">
+    <class name="Staff" table="Staff">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="FirstName" />
+        <property name="LastName" />
+        <property name="IsActive" />
+        <property name="Title" />
+        <property name="Bio" />
+        <property name="Email" />
+        <property name="AvatarPath" />
+    </class>
+</hibernate-mapping>

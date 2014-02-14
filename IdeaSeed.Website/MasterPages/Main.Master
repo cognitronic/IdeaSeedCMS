@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="IdeaSeed.Website.MasterPages.Main" %>
+<%@ Register TagPrefix="idea" TagName="PrimaryNavView" Src="~/Views/PrimaryNavView.ascx" %>
+<%@ Register TagPrefix="idea" TagName="BannerImagesView" Src="~/Views/BannerImagesView.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link rel="shortcut icon" type="image/gif" href="/images/favicon.gif"/>
+    <link rel="stylesheet" href="/Styles/prettyPhoto.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/Styles/nivo-slider.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" id="skinsswitcher" href="/Styles/style.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/custom.js"></script>
+    <script type="text/javascript" src="/Scripts/slides/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/cycle-slider/cycle.js"></script>
+    <script type="text/javascript" src="/Scripts/nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="/Scripts/tabify/jquery.tabify.js"></script>
+    <script type="text/javascript" src="/Scripts/prettyPhoto/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="/Scripts/twitter/jquery.tweet.js"></script>
+    <script type="text/javascript" src="/Scripts/scrolltop/scrolltopcontrol.js"></script>
+    <script type="text/javascript" src="/Scripts/portfolio/filterable.js"></script>
+    <script type="text/javascript" src="/Scripts/modernizr/modernizr-2.0.3.js"></script>
+    <script type="text/javascript" src="/Scripts/easing/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/Scripts/kwicks/jquery.kwicks-1.5.1.pack.js"></script>
+    <script type="text/javascript" src="/Scripts/swfobject/swfobject.js"></script>
+    <!--CUFON FONTS-->
+    <script type="text/javascript" src="/Scripts/cufon-fonts/cufon.js"></script>
+    <script type="text/javascript" src="/Scripts/cufon-fonts/cufon-settings.js"></script>
+    <script type="text/javascript" src="/Scripts/cufon-fonts/cufon.museo.js"></script>
+    <script type="text/javascript" src="/Scripts/cufon-fonts/Titillium.font.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:radscriptmanager 
+    ID="RadScriptManager1" 
+    runat="server">
+        <Scripts>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+        </Scripts>
+    </telerik:radscriptmanager>
+    <telerik:radajaxmanager 
+    ID="RadAjaxManager1" 
+    runat="server">
+        <AjaxSettings>
+            <telerik:AjaxSetting AjaxControlID="lbNewsletter">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="divFooterMessage" LoadingPanelID="rapMaster" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+        </AjaxSettings>
+    </telerik:radajaxmanager>
+    <telerik:RadAjaxLoadingPanel ID="rapMaster" runat="server" Skin="Windows7" />
+    <div id="wrapper">
+	    <div class="center">
+		    <p class="header-text-left">
+		    
+		    </p>
+	    <ul id="header-icons">
+		    <li class="icon-facebook" title="Facebook"><a href="http://www.facebook.com/ModestoPower" ></a></li>
+		    <li class="icon-twitter" title="Twitter"><a href="http://www.facebook.com/ModestoPower" target="_blank"></a></li>
+		    <li class="icon-vimeo" title="Vimeo"><a href="http://www.facebook.com/ModestoPower" target="_blank"></a></li>
+	    </ul>
+		    <div id="container">
+			    <!--WRAPPER-->
+			    <div id="header">
+				    <!-- HEADER  -->
+				    <!-- LOGO -->
+				    <a id="logo" title="Homepage" href="/Home"></a>
+				    <!--LOGO ENDS  -->
+                    
+            
+				    
+					    <!--  MAIN  NAVIGATION-->
+                        <idea:PrimaryNavView
+                        runat="server"
+                        ID="primaryNav" />
+				    <!-- MAIN NAVIGATION ENDS-->
+			    </div>
+			    <!-- HEADER ENDS-->
+			    <!-- MAIN CONTAINER -->
+			    <div id="content">
+				    
+						<asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                        	    
+				    
+				   
+				    <!-- FOOTER WRAPPER ENDS-->
+				    <div id="copyright-wrapper">
+					    <!-- COPYRIGHTS WRAPPER STARTS-->
+                        <div style="margin-left: 193px; font-size: 16px; font-weight:bolder;">
+                            
+                        </div>
+					    <div id="copyright">
+						    <%--<a id="logo-copyright" title="Homepage" href="#"></a>--%>
+                            &nbsp;&nbsp;
+                            <%--<span style="vertical-align:bottom;">
+                                <idea:TextBox
+                                runat="server"
+                                Height="18px"
+                                ID="tbNewsletterSignup"
+                                Width="200px" />
+                                <asp:RegularExpressionValidator 
+                                ID="valEmailAddress"
+                                ControlToValidate="tbNewsletterSignup"
+                                CssClass="error"
+                                ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" 
+                                ErrorMessage="<br />Email address is invalid." 
+                                Display="Dynamic" 
+                                EnableClientScript="true"
+                                Runat="server"/>
+                            </span>--%>
+                           
+                                <%--<idea:LinkButton
+                                runat="server"
+                                CssClass="button small round red-cherry"
+                                ID="lbNewsletter"
+                                ForeColor="#ffffff"
+                                OnClick="NewsletterClicked">
+                                    <b>Sign Up!</b>
+                                </idea:LinkButton>
+                            </span>--%>
+						    <div class="right">
+							    <p>
+								    <a href="/Home">Home</a> / <a href="/Our-Trainers/Chewy-Ybarra">Our Trainers</a> / <a href="/What-We-Offer/Brazilian-Jiu-Jitsu">Programs</a> / <a href="/Contact">Contact</a> / <a href="/Schedule">Schedule</a> / <a href="/News">News</a>
+							    </p>
+							    
+							    
+						    </div>
+						    <div style="float: left;">
+						        <span>© Copyright <idea:Label runat="server" ID="lblCopy" /> <font color="#cc0000">Modesto</font><font color="#000">Power</font>. All rights reserved.</span><br />
+						         <span style="vertical-align:text-bottom !important;">
+                                <p>Designed by <a style="color: #30b8ff;" href="http://www.ravenartmedia.com">RavenArtMedia</a></p>
+                            </span>
+						    </div>
+					    </div>
+                        <div runat="server" id="divFooterMessage" >
+                            <idea:Label
+                            runat="server"
+                            ID="lblNewsletterMessage"
+                            Text="Thank you for registering!!!" />
+                        </div>
+					    <!-- COPYRIGHTS ENDS-->
+				    </div>
+				    <!-- COPYRIGHTS WRAPPER ENDS-->	
+		    </div>
+		    </div>
+	    </div>
+    </div>
+    </form>
+</body>
+</html>

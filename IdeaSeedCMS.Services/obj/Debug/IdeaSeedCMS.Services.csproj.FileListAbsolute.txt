@@ -1,0 +1,17 @@
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeedCMS.Services.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeedCMS.Services.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeed.Core.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeedCMS.Core.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeedCMS.Persistence.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\NHibernate.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\Iesi.Collections.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeedCMS.Core.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeedCMS.Persistence.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\IdeaSeed.Core.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\NHibernate.xml
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\Iesi.Collections.xml
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\obj\Debug\IdeaSeedCMS.Services.dll
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\obj\Debug\IdeaSeedCMS.Services.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\NHibernate.pdb
+D:\Projects\IdeaSeedCMS\IdeaSeedCMS.Services\bin\Debug\Iesi.Collections.pdb

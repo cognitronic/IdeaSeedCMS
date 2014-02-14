@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Datos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+</style>
+</head>
+<body>
+<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+	<colgroup>
+		<col style="width:20px" />
+		<col style="width:16px" />
+		<col style="width:30px" />
+		<col style="width:275px" />
+		<col style="width:100px" />
+		<col style="width:80px" />
+		<col style="width:100px" />
+		<col style="width:75px" />
+		<col  />
+		<col style="width:15px" />
+		<col style="width:15px" />
+		<col style="width:17px" />
+		<col style="width:17px" />
+	</colgroup>
+<thead>
+		<tr>
+			<td class="rgCommandCell"><table class="rgCommandTable" border="0" style="width:100%;">
+				<tr>
+					<td align="left"><input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$AddNewRecordButton" value=" " onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$AddNewRecordButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_AddNewRecordButton" title="Add Task" class="rgAdd" /><a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_InitInsertButton" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$InitInsertButton','')">Add Task</a></td><td align="right"><input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$RefreshButton" value=" " onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$RefreshButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_RefreshButton" title="Refresh" class="rgRefresh" /><a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_RebindGridButton" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$RebindGridButton','')">Refresh</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$ExportToExcelButton" value=" " onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$ExportToExcelButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_ExportToExcelButton" title="Export to Excel" class="rgExpXLS" />&nbsp;&nbsp;<input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$ExportToPdfButton" value=" " onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$ExportToPdfButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_ExportToPdfButton" title="Export to PDF" class="rgExpPDF" />&nbsp;&nbsp;<input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$ExportToWordButton" value=" " onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl00$ExportToWordButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl00_ExportToWordButton" title="Export to Word" class="rgExpDOC" /></td>
+				</tr>
+			</table></td>
+		</tr><tr>
+			<th scope="col">
+                             <span style="cursor: default;"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl02_ctl02_cbSelectAllRows" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$cbSelectAllRows" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$cbSelectAllRows\',\'\')', 0)" /></span>
+                            </th><th scope="col">&nbsp;</th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl00','')">Task ID</a></th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl01','')">Title</a></th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl02','')">Contact</a></th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl05','')">Assigned To</a></th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl06','')">Department</a></th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl07','')">Account</a></th><th scope="col"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl09','')">Date Entered</a></th><th scope="col" title="Status"><a title="Status" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl12','')">S</a></th><th scope="col" title="Priority"><a title="Priority" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl02$ctl02$ctl13','')">P</a></th><th scope="col" title="Edit Record">E</th><th scope="col" title="Delete Record">D</th>
+		</tr>
+	</thead><tbody>
+	<tr>
+		<td>
+                                <span taskid="38648"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl04_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl04$cbSelectRow" checked="checked" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38648' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl04_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38648
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl04_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="5" taskid="38648">Data Path Website CMS</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl04_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Data Path&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>318 McHenry Ave., Suite A&lt;br />&lt;br />Modesto CA, 95354&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 521-0055&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=5" target="_blank">Data Path</a>
+                            </td><td>
+                                5/2/2011<br />7:45 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl04_lbEdit" title="Edit Task" taskid="38648" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl04$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl04_lbDelete" title="Delete Task" taskid="38648" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl04$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38647"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl06_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl06$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38647' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl06_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38647
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl06_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="5" taskid="38647">Data Path eCommerce</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl06_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Data Path&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>318 McHenry Ave., Suite A&lt;br />&lt;br />Modesto CA, 95354&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 521-0055&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=5" target="_blank">Data Path</a>
+                            </td><td>
+                                5/2/2011<br />7:45 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl06_lbEdit" title="Edit Task" taskid="38647" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl06$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl06_lbDelete" title="Delete Task" taskid="38647" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl06$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38646"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl08_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl08$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38646' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl08_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38646
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl08_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="5" taskid="38646">Insight</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl08_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Data Path&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>318 McHenry Ave., Suite A&lt;br />&lt;br />Modesto CA, 95354&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 521-0055&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=5" target="_blank">Data Path</a>
+                            </td><td>
+                                5/2/2011<br />7:45 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl08_lbEdit" title="Edit Task" taskid="38646" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl08$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl08_lbDelete" title="Delete Task" taskid="38646" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl08$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38645"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl10_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl10$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38645' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl10_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38645
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl10_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="5" taskid="38645">KUSD CMS</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl10_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Data Path&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>318 McHenry Ave., Suite A&lt;br />&lt;br />Modesto CA, 95354&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 521-0055&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=5" target="_blank">Data Path</a>
+                            </td><td>
+                                5/2/2011<br />7:45 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl10_lbEdit" title="Edit Task" taskid="38645" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl10$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl10_lbDelete" title="Delete Task" taskid="38645" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl10$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38644"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl12_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl12$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38644' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl12_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38644
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl12_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="5" taskid="38644">CWM CMS and Website</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl12_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Data Path&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>318 McHenry Ave., Suite A&lt;br />&lt;br />Modesto CA, 95354&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 521-0055&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=5" target="_blank">Data Path</a>
+                            </td><td>
+                                5/2/2011<br />7:45 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl12_lbEdit" title="Edit Task" taskid="38644" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl12$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl12_lbDelete" title="Delete Task" taskid="38644" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl12$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38642"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl14_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl14$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38642' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl14_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38642
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl14_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="251" taskid="38642">Follow Up With Ogden Law</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl14_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Ogden Law Office&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>1535 J Street, Suite A&lt;br />&lt;br />Modesto CA, 95354&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 524-4466&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=251" target="_blank">Ogden Law O...</a>
+                            </td><td>
+                                5/2/2011<br />7:44 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl14_lbEdit" title="Edit Task" taskid="38642" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl14$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl14_lbDelete" title="Delete Task" taskid="38642" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl14$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38641"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl16_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl16$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38641' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl16_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38641
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl16_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="49" taskid="38641">Change Requests to District CMS</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl16_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Newman Crows-Landing USD&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>890 Main St.&lt;br />&lt;br />Newman CA, 95360&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 862-2933&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>(209) 862-0113&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=49" target="_blank">Newman Crow...</a>
+                            </td><td>
+                                5/2/2011<br />7:43 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl16_lbEdit" title="Edit Task" taskid="38641" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl16$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl16_lbDelete" title="Delete Task" taskid="38641" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl16$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38640"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl18_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl18$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38640' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl18_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38640
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl18_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="25" taskid="38640">Create Harvest Report</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl18_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Dimare&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>1406 N St.&lt;br />&lt;br />Newman CA, 95360&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 862-2872&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=25" target="_blank">Dimare</a>
+                            </td><td>
+                                5/2/2011<br />7:38 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl18_lbEdit" title="Edit Task" taskid="38640" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl18$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl18_lbDelete" title="Delete Task" taskid="38640" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl18$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38639"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl20_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl20$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38639' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl20_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38639
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl20_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="25" taskid="38639">Create Planting Schedule Report</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl20_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Dimare&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>1406 N St.&lt;br />&lt;br />Newman CA, 95360&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 862-2872&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=25" target="_blank">Dimare</a>
+                            </td><td>
+                                5/2/2011<br />7:38 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl20_lbEdit" title="Edit Task" taskid="38639" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl20$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl20_lbDelete" title="Delete Task" taskid="38639" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl20$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38638"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl22_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl22$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38638' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl22_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38638
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl22_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="202" taskid="38638">Shipping Module</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl22_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Alpine Pacific Nut Company&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>6413 East Keyes Road&lt;br />&lt;br />Turlock CA, 95382&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 667-8688&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=202" target="_blank">Alpine Paci...</a>
+                            </td><td>
+                                5/2/2011<br />7:37 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl22_lbEdit" title="Edit Task" taskid="38638" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl22$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl22_lbDelete" title="Delete Task" taskid="38638" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl22$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38637"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl24_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl24$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38637' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl24_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38637
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl24_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="202" taskid="38637">Final Payment Report</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl24_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Alpine Pacific Nut Company&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>6413 East Keyes Road&lt;br />&lt;br />Turlock CA, 95382&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 667-8688&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=202" target="_blank">Alpine Paci...</a>
+                            </td><td>
+                                5/2/2011<br />7:36 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl24_lbEdit" title="Edit Task" taskid="38637" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl24$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl24_lbDelete" title="Delete Task" taskid="38637" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl24$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38636"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl26_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl26$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38636' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl26_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38636
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl26_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="202" taskid="38636">Change Request On Grower Payment Report</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl26_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Alpine Pacific Nut Company&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>6413 East Keyes Road&lt;br />&lt;br />Turlock CA, 95382&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 667-8688&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=202" target="_blank">Alpine Paci...</a>
+                            </td><td>
+                                5/2/2011<br />7:36 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl26_lbEdit" title="Edit Task" taskid="38636" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl26$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl26_lbDelete" title="Delete Task" taskid="38636" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl26$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38635"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl28_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl28$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38635' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl28_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38635
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl28_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="55" taskid="38635">Upgrade To New CMS & Campaign Manager</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl28_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Primeshine Express&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>PO Box 3469&lt;br />&lt;br />Modesto  CA, 95353&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 549-9274&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>(209) 549-1542&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=55" target="_blank">Primeshine ...</a>
+                            </td><td>
+                                5/2/2011<br />7:35 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl28_lbEdit" title="Edit Task" taskid="38635" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl28$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl28_lbDelete" title="Delete Task" taskid="38635" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl28$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38634"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl30_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl30$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38634' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl30_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38634
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl30_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="55" taskid="38634">Barcodes for Birthday and Free Washes</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl30_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Primeshine Express&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>PO Box 3469&lt;br />&lt;br />Modesto  CA, 95353&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 549-9274&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>(209) 549-1542&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=55" target="_blank">Primeshine ...</a>
+                            </td><td>
+                                5/2/2011<br />7:34 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl30_lbEdit" title="Edit Task" taskid="38634" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl30$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl30_lbDelete" title="Delete Task" taskid="38634" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl30$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="38633"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl32_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl32$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='38633' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl32_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                38633
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl32_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="55" taskid="38633">Additions and Changes To GSR</span>
+                            </td><td>
+                                 
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl32_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Primeshine Express&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>PO Box 3469&lt;br />&lt;br />Modesto  CA, 95353&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 549-9274&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>(209) 549-1542&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=55" target="_blank">Primeshine ...</a>
+                            </td><td>
+                                5/2/2011<br />7:32 AM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl32_lbEdit" title="Edit Task" taskid="38633" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl32$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl32_lbDelete" title="Delete Task" taskid="38633" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl32$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr><tr>
+		<td>
+                                <span taskid="37832"><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl34_cbSelectRow" type="checkbox" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl34$cbSelectRow" /></span>
+                            </td><td>
+                                <span 
+                                id="taskNote" 
+                                taskid='37832' 
+                                name="taskNote"
+                                onclick='return showNote(this);' 
+                                class="taskNote">
+                                <img id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl34_imgNote" src="../images/note_inactive.png" align="middle" style="border-width:0px;" />
+                                </span>
+                            </td><td>
+                                37832
+                            </td><td>
+                                <span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl34_lblTitle" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Description: &lt;/font>&lt;/b>&lt;br />&lt;br />&lt;/div>" accountid="55" taskid="37832">Testing in IE 9</span>
+                            </td><td>
+                                Jay Japka
+                            </td><td>
+                                dschreiber
+                            </td><td>
+                                Software De...
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl34_lbAccount" title="&lt;div style='padding: 10px; margin: 10px; font-size: 12px;'>&lt;b>&lt;font color='#0A5999'>Account: &lt;/font>&lt;/b>Primeshine Express&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Address: &lt;/font>&lt;/b>PO Box 3469&lt;br />&lt;br />Modesto  CA, 95353&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Phone: &lt;/font>&lt;/b>(209) 549-9274&lt;br />&lt;br />&lt;b>&lt;font color='#0A5999'>Fax: &lt;/font>&lt;/b>(209) 549-1542&lt;br />&lt;br />&lt;/div>" href="../Accounts/Accounts.aspx?accountid=55" target="_blank">Primeshine ...</a>
+                            </td><td>
+                                4/7/2011<br />2:02 PM
+                            </td><td>
+                                <span style='vertical-align: middle;' title='Acknowledged'><font style='color: blue; font-weight: bold;'>A</font></span>
+                            </td><td>
+                                <span style='margin-top: 2px; vertical-align: middle;' title='Medium' ><img src='../images/priority_medium.png' border='0' alt='Medium' /></span>
+                            </td><td>
+                                <a id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl34_lbEdit" title="Edit Task" taskid="37832" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl34$lbEdit','')">
+                                    <img src="../images/edit.gif" border="0" alt="Edit Task"/>
+                                </a>
+                            </td><td>
+                                <a onclick="return confirm('Are you sure you want do delete this record?');" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl34_lbDelete" title="Delete Task" taskid="37832" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl34$lbDelete','')">
+                                    <img src="../images/delete.gif" border="0" alt="Delete Task"/>
+                                </a>
+                            </td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td colspan="13"><table cellspacing="0" border="0" style="width:100%;">
+				<tr>
+					<td class="rgStatus"><div id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_statusPanel" style="visibility:hidden;">
+						&nbsp;
+					</div></td><td class="rgPagerCell NextPrevNumericAndAdvanced"><div class="rgWrap rgArrPart1">
+						<input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl02" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl02','')" title="First Page" class="rgPageFirst" /> <input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl03" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl03','')" title="Previous Page" class="rgPagePrev" />
+					</div><div class="rgWrap rgNumPart">
+						<a onclick="return false;" class="rgCurrentPage" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl05','')"><span>1</span></a>
+					</div><div class="rgWrap rgArrPart2">
+						<input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl08" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl08','')" title="Next Page" class="rgPageNext" />  <input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl09" value=" " onclick="return false;__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ctl09','')" title="Last Page" class="rgPageLast" />
+					</div><div class="rgWrap rgInfoPart">
+						 &nbsp;Item <strong>1</strong> to <strong>16</strong> of <strong>16</strong>
+					</div><div class="rgWrap rgAdvPart">
+						<span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageLabel" class="rgPagerLabel">Page:</span><!-- 2009.3.1208.35 --><span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox_wrapper" class="RadInput RadInput_Vista" style="white-space:normal;"><input type="text" value="1" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox_text" name="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox_text" class="riTextBox riEnabled rgPagerTextBox" style="width:10px;" /><input style="visibility:hidden;margin:-18px 0 0 -1px;width:1px;height:1px;overflow:hidden;border:0;padding:0;" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox" class="rdfd_" value="1" type="text" /><input style="visibility:hidden;margin:-18px 0 0 -1px;width:1px;height:1px;overflow:hidden;border:0;padding:0;" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox_Value" class="rdfd_" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$GoToPageTextBox" value="1" type="text" /><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox_ClientState" name="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox_ClientState" type="hidden" /></span><span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_PageOfLabel" class="rgPagerLabel">of 1</span>&nbsp;<input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$GoToPageLinkButton" value="Go" onclick="var gtpi = $get('ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageTextBox'); if(gtpi.value == 1 || gtpi.value == '')return false;__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$GoToPageLinkButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_GoToPageLinkButton" class="rgPagerButton" /><span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeLabel" class="rgPagerLabel">Page size:</span><span id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox_wrapper" class="RadInput RadInput_Vista" style="white-space:normal;"><input type="text" value="16" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox_text" name="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox_text" class="riTextBox riEnabled rgPagerTextBox" style="width:20px;" /><input style="visibility:hidden;margin:-18px 0 0 -1px;width:1px;height:1px;overflow:hidden;border:0;padding:0;" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox" class="rdfd_" value="16" type="text" /><input style="visibility:hidden;margin:-18px 0 0 -1px;width:1px;height:1px;overflow:hidden;border:0;padding:0;" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox_Value" class="rdfd_" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ChangePageSizeTextBox" value="16" type="text" /><input id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox_ClientState" name="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox_ClientState" type="hidden" /></span><input type="button" name="ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ChangePageSizeLinkButton" value="Change" onclick="var cpsi = document.getElementById(&quot;ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeTextBox&quot;); if ( cpsi.value > 16 || cpsi.value == 17){cpsi.value=Math.min(16,17);return false;};__doPostBack('ctl00$ContentPlaceHolder1$rgTasks$ctl00$ctl03$ctl01$ChangePageSizeLinkButton','')" id="ctl00_ContentPlaceHolder1_rgTasks_ctl00_ctl03_ctl01_ChangePageSizeLinkButton" class="rgPagerButton" />
+					</div></td>
+				</tr>
+			</table></td>
+		</tr>
+	</tfoot>
+</table></body></html>
