@@ -3,7 +3,7 @@
     <session-factory name="NHibernate.Test">
         <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
         <property name="connection.connection_string">
-            Data Source=(local)\sql2008;Initial Catalog=IdeaSeedCMS;Persist Security Info=True;User ID=dgs;Password=Fir3al
+            Data Source=(local)\sql2008;Initial Catalog=IdeaSeedCMS;Persist Security Info=True;User ID=;Password=
         </property>
         <property name="adonet.batch_size">100</property>
         <property name="show_sql">false</property>
